@@ -40,13 +40,13 @@ You really do not need to build and execute this project for code review. If you
 
 ### Build with CMake
 
-If you would like to build and execute this program nevertheless, we provide a fully functional CMake script to configure and generate a build system for this project:
+We provide a fully functional CMake script to configure and generate a build system for this project:
 
     git clone https://github.com/kislinsk/codereview.git
     cmake -S codereview -B codereview-build
     cmake --build codereview-build
 
-If you did not set up a default generator for CMake you can explicitly specify a generator by adding the `-G` argument to the second command above, for example:
+You can explicitly specify a generator by adding the `-G` argument to the second command above, for example:
 
     cmake -S codereview -B codereview-build -G "Unix Makefiles"
 
@@ -56,4 +56,4 @@ Or on Windows something like:
 
 ### Build without CMake
 
-Since the program consists of a single C++ source file without any dependencies except the C++ Standard Library you can also manually set up your build system or IDE of choice in case you do not feel comfortable with CMake.
+The program consists of a single C++ source file without any dependencies except the C++ Standard Library. You can also manually set up your build system or IDE of choice in case you do not feel comfortable with CMake.
